@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 
 class Input extends StatelessWidget {
-  var crtl = new MoneyMaskedTextController();
+  var ctrl = new MoneyMaskedTextController();
   var label = "";
-
   Input({
-    @required this.label
+    @required this.label,
+    @required this.ctrl
   });
 
   @override
@@ -29,7 +29,7 @@ class Input extends StatelessWidget {
           Expanded(
             child:TextFormField(
               keyboardType: TextInputType.number,
-              controller: crtl,
+              controller: ctrl,
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 45,
