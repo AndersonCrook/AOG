@@ -1,5 +1,5 @@
+import 'package:AOG/Widgets/PopUpWidget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_masked_text/flutter_masked_text.dart';
 import 'Widgets/InputWidget.dart';
 import 'Widgets/LogoWidget.dart';
 
@@ -27,6 +27,7 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           Logo(),
+          PopUp(),
           Input(label: "Álcool"),
           Input(label: "Gasolina"),
           Container(
